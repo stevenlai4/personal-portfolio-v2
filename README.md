@@ -2,8 +2,7 @@
 portfolio-project-stevenlai4 created by GitHub Classroom
 
 
-##Sections
-
+Sections
 1. About me
 2. Work Experience
 3. Personal Projects
