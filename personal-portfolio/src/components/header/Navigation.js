@@ -8,8 +8,8 @@ export default function Navigation() {
             <Navbar.Brand className="d-lg-block d-none" href="#home">
                 <img
                     src="images/logo.png"
-                    width="90"
-                    height="90"
+                    width="70"
+                    height="70"
                     className="d-inline-block align-top"
                     alt="Logo"
                 />
