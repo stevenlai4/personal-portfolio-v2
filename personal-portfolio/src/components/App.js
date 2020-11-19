@@ -1,9 +1,10 @@
-import '../styles/App.scss';
+import '../style/App.scss';
+import Header from './header/Header';
 
 function App() {
     return (
-        <div className="App container">
-            <h1>Hello</h1>
+        <div className="App">
+            <Header />
         </div>
     );
 }
