@@ -1,11 +1,31 @@
-# portfolio-project-stevenlai4
-portfolio-project-stevenlai4 created by GitHub Classroom
+# Personal Protfolio
 
+## Section
 
-Sections
-1. About me
-2. Work Experience
-3. Personal Projects
-4. Awards
-5. Education
-6. Contact Form
+### Nav & Banner
+
+![alt header](./personal-portfolio/public/images/nav&banner.png)
+
+### About
+
+![alt about](./personal-portfolio/public/images/about.png)
+
+### Skill
+
+![alt skill](./personal-portfolio/public/images/skills.png)
+
+### Project
+
+![alt project](./personal-portfolio/public/images/projects.png)
+
+### Work Experience
+
+![alt experience](./personal-portfolio/public/images/experience.png)
+
+### Competition
+
+![alt competition](./personal-portfolio/public/images/competition.png)
+
+### Contact
+
+![alt contact](./personal-portfolio/public/images/contact.png)
