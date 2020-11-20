@@ -6,6 +6,14 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin section-title {
+    > h1 {
+        margin-bottom: 50px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
 // @mixin rotate-360-inf {
 //     @keyframes rotating {
 //         from {

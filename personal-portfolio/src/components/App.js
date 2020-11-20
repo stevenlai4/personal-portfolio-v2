@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Separator from './Separator';
 import Header from './header/Header';
 import About from './about/About';
+import Skill from './skill/Skill';
 
 function App() {
     const [theme, setTheme] = useState('light');
@@ -33,6 +34,7 @@ function App() {
             <Header />
             <About theme={theme} onThemeChange={handleThemeColor} />
             <Separator theme={theme} />
+            <Skill />
         </div>
     );
 }

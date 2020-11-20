@@ -13,23 +13,19 @@
 }
 
 .about {
-    padding: 40px 0;
+    padding: $section-tb-padding;
 
-    > h1 {
-        margin-bottom: 50px;
-        font-weight: 600;
-        text-align: center;
-    }
+    @include section-title;
+
     .react-card-flip {
-        .front,
-        .back {
+        .theme-card {
             position: relative;
             display: flex;
             justify-content: center;
 
             .selfie {
-                border-radius: $circular-image;
                 @include center-item;
+                border-radius: $circular-image;
 
                 &:hover {
                     cursor: pointer;

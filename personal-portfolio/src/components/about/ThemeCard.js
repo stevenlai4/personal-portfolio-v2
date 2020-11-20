@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CardBack(props) {
+export default function ThemeCard(props) {
     const handleThemeChange = () => {
         if (props.theme === 'light') {
             props.handleSelfieFlip();
@@ -12,13 +12,13 @@ export default function CardBack(props) {
     };
 
     return (
-        <div className="back">
+        <div className="theme-card">
             <img
                 className="theme-pic"
                 width="280px"
                 height="280px"
-                src="images/moon.png"
-                alt="moon"
+                src={`images/${props.theme === 'light' ? 'sun' : 'moon'}.png`}
+                alt="theme pic"
             />
 
             <img
