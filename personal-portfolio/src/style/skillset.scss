@@ -1,0 +1,15 @@
+@import '../style/global/variable.scss';
+
+.skill-set {
+    h3 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}

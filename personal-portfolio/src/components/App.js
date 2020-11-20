@@ -13,20 +13,27 @@ function App() {
         setTheme(newTheme);
     };
 
-    useEffect(() => {
+    // Theme Handler
+    const themeHandler = () => {
         const app = document.querySelector('.App');
-        const navItems = document.querySelectorAll('.nav-item');
+        const skillPercentages = document.querySelectorAll('.skill-percentage');
 
         if (theme === 'light') {
             app.style =
                 'color: #000 !important; background-color: #fffaf0 !important;';
+            skillPercentages.forEach((skillPercentage) => {
+                skillPercentage.style = 'color: #000';
+            });
         } else {
-            app.style =
-                'color: #fff !important; background-color: #000 !important;';
-            navItems.forEach((navItem) => {
-                navItem.style = 'color: #fff';
+            app.style = 'color: #fff !important; background-color: #000;';
+            skillPercentages.forEach((skillPercentage) => {
+                skillPercentage.style = 'color: #c0a062';
             });
         }
+    };
+
+    useEffect(() => {
+        themeHandler();
     }, [theme]);
 
     return (
@@ -35,6 +42,7 @@ function App() {
             <About theme={theme} onThemeChange={handleThemeColor} />
             <Separator theme={theme} />
             <Skill />
+            <Separator theme={theme} />
         </div>
     );
 }

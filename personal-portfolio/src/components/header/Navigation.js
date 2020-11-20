@@ -4,7 +4,7 @@ import '../../style/navigation.scss';
 
 export default function Navigation() {
     return (
-        <Navbar className="navbar" fixed="top" expand="lg">
+        <Navbar fixed="top" expand="lg">
             <Navbar.Brand className="d-lg-block d-none" href="#home">
                 <img
                     src="images/logo-light.png"
