@@ -1,105 +1,106 @@
 @import '../style/global/mixin.scss';
+.skill-item {
+    .skill-circle {
+        margin: 10px;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-.skill-circle {
-    margin: 10px;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* Create skill With 50% Rounded */
 
-    /* Create skill With 50% Rounded */
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        padding: 10px;
 
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    padding: 10px;
+        /* Assign the perspective to enable 3d Transform */
+        perspective: 600px;
+        -webkit-perspective: 600px;
+        -moz-perspective: 600px;
 
-    /* Assign the perspective to enable 3d Transform */
-    perspective: 600px;
-    -webkit-perspective: 600px;
-    -moz-perspective: 600px;
-}
+        .skill-front {
+            position: absolute;
 
-.skill-circle .skill-front {
-    position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 9;
 
-    top: 20%;
-    left: 20%;
-    z-index: 9;
+            /* Assign The 3D Transform */
+            transform: rotateX(0deg) rotateY(0deg);
+            -webkit-transform: rotateX(0deg) rotateY(0deg);
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            -moz-transform: rotateX(0deg) rotateY(0deg);
+            -moz-transform-style: preserve-3d;
+            -moz-backface-visibility: hidden;
 
-    /* Assign The 3D Transform */
-    transform: rotateX(0deg) rotateY(0deg);
-    -webkit-transform: rotateX(0deg) rotateY(0deg);
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-transform: rotateX(0deg) rotateY(0deg);
-    -moz-transform-style: preserve-3d;
-    -moz-backface-visibility: hidden;
+            /* Transition Effect */
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+        }
+    }
+    /* .flipping class for flip effect using jquery */
 
-    /* Transition Effect */
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}
-/* .flipping class for flip effect using jquery */
+    .skill-circle.flipping .skill-front {
+        z-index: 9;
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+    }
 
-.skill-circle.flipping .skill-front {
-    z-index: 9;
-    transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
-}
+    .skill-circle .skill-back {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        text-align: center;
+        z-index: 8;
+        /* Create skill With 50% Rounded */
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
 
-.skill-circle .skill-back {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    text-align: center;
-    z-index: 8;
-    /* Create skill With 50% Rounded */
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+        /* Assign The 3D Transform */
+        transform: rotateX(-180deg);
+        -webkit-transform: rotateX(-180deg);
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-transform: rotateX(-180deg);
+        -moz-transform-style: preserve-3d;
+        -moz-backface-visibility: hidden;
 
-    /* Assign The 3D Transform */
-    transform: rotateX(-180deg);
-    -webkit-transform: rotateX(-180deg);
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-transform: rotateX(-180deg);
-    -moz-transform-style: preserve-3d;
-    -moz-backface-visibility: hidden;
+        /* Transition Effect */
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
 
-    /* Transition Effect */
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}
+        .skill-percentage {
+            align-self: center;
+            margin-bottom: 0;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+    }
 
-.skill-circle.flipping .skill-back {
-    z-index: 10;
-    transform: rotateX(0deg) rotateY(0deg);
-    -webkit-transform: rotateX(0deg) rotateY(0deg);
-    -moz-transform: rotateX(0deg) rotateY(0deg);
-}
-
-.skill-percentage {
-    align-self: center;
-    margin-bottom: 0;
-    font-size: 2rem;
-    font-weight: 900;
+    .skill-circle.flipping .skill-back {
+        z-index: 10;
+        transform: rotateX(0deg) rotateY(0deg);
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+    }
 }
