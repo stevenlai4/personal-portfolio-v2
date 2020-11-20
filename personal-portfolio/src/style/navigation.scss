@@ -1,7 +1,7 @@
 @import './global/variable.scss';
 
 .navbar {
-    background-color: #313d4b;
+    background-color: #131414;
 
     .nav-toggle {
         border: none;
@@ -10,15 +10,15 @@
     .nav-items {
         .nav-item {
             margin-right: 20px;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
-            color: white !important;
+            color: #fff !important;
         }
     }
 }
 
 @media screen and (min-width: map-get($breakpoints, desktop )) {
     .navbar {
-        background-color: transparent;
+        background-color: transparent !important;
     }
 }

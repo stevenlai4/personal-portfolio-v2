@@ -1,0 +1,8 @@
+@import './global/mixin.scss';
+@import './global/variable.scss';
+
+.skill {
+    padding: $section-tb-padding;
+
+    @include section-title;
+}

@@ -7,10 +7,10 @@ export default function Navigation() {
         <Navbar className="navbar" fixed="top" expand="lg">
             <Navbar.Brand className="d-lg-block d-none" href="#home">
                 <img
-                    src="images/logo.png"
-                    width="90"
-                    height="90"
-                    className="d-inline-block align-top"
+                    src="images/logo-light.png"
+                    width="75"
+                    height="75"
+                    className="d-inline-block align-top navbrand"
                     alt="Logo"
                 />
             </Navbar.Brand>

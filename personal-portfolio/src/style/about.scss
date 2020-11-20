@@ -1,0 +1,59 @@
+@import '../style//global/variable.scss';
+@import '../style/global/mixin.scss';
+
+// Inheritance
+%sub-section-shared {
+    h4 {
+        text-decoration: underline;
+        font-weight: 40;
+    }
+    p {
+        font-style: italic;
+    }
+}
+
+.about {
+    padding: $section-tb-padding;
+
+    @include section-title;
+
+    .react-card-flip {
+        .theme-card {
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            .selfie {
+                @include center-item;
+                border-radius: $circular-image;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .objective {
+        margin-top: 40px;
+
+        @extend %sub-section-shared;
+
+        p {
+            text-align: justify;
+        }
+    }
+    .education {
+        margin-top: 20px;
+
+        @extend %sub-section-shared;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, desktop )) {
+    .about {
+        .objective,
+        .education {
+            margin-top: 0;
+        }
+    }
+}
