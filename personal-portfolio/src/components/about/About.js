@@ -25,9 +25,9 @@ export default function About(props) {
     };
 
     return (
-        <section className="about">
+        <section className="about container">
             <h1>ABOUT</h1>
-            <div className="about-content container">
+            <div className="about-content">
                 <div className="row">
                     <div className="col-lg-4 order-lg-2 col-12">
                         <ReactCardFlip

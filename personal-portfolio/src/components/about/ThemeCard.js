@@ -5,9 +5,11 @@ export default function ThemeCard(props) {
         if (props.theme === 'light') {
             props.handleSelfieFlip();
             props.onThemeChange('dark');
+            localStorage.setItem('theme', 'dark');
         } else {
             props.handleSelfieFlip();
             props.onThemeChange('light');
+            localStorage.setItem('theme', 'light');
         }
     };
 

@@ -4,6 +4,7 @@ import './index.scss';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/dist/jquery.min.js';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

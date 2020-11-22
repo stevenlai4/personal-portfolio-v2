@@ -4,9 +4,12 @@ import Separator from './Separator';
 import Header from './header/Header';
 import About from './about/About';
 import Skill from './skill/Skill';
+import Project from './project/Project';
 
 function App() {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState(
+        localStorage.getItem('theme') ?? 'light'
+    );
 
     // Hand theme color function
     const handleThemeColor = (newTheme) => {
@@ -16,18 +19,18 @@ function App() {
     // Theme Handler
     const themeHandler = () => {
         const app = document.querySelector('.App');
-        const skillPercentages = document.querySelectorAll('.skill-percentage');
+        const projectCatItems = document.querySelectorAll('.category-item p');
 
         if (theme === 'light') {
             app.style =
                 'color: #000 !important; background-color: #fffaf0 !important;';
-            skillPercentages.forEach((skillPercentage) => {
-                skillPercentage.style = 'color: #000';
+            projectCatItems.forEach((projectCatItem) => {
+                projectCatItem.style = 'color: #000';
             });
         } else {
             app.style = 'color: #fff !important; background-color: #000;';
-            skillPercentages.forEach((skillPercentage) => {
-                skillPercentage.style = 'color: #c0a062';
+            projectCatItems.forEach((projectCatItem) => {
+                projectCatItem.style = 'color: #fff';
             });
         }
     };
@@ -43,6 +46,7 @@ function App() {
             <Separator theme={theme} />
             <Skill />
             <Separator theme={theme} />
+            <Project />
         </div>
     );
 }
