@@ -1,0 +1,46 @@
+import React, { useState } from 'react';
+import ProjectModal from './ProjectModal';
+import { AiFillInfoCircle } from 'react-icons/ai';
+import '../../style/project-item.scss';
+
+export default function ProjectItem(props) {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleShowModal = () => {
+        setShowModal(true);
+    };
+
+    return (
+        <div className="project-item">
+            <div className="project-card">
+                <img src={props.project.image} alt={props.project.name} />
+                <div className="project-card-body">
+                    <h2>{props.project.name}</h2>
+                    <small>
+                        {props.project.language.map((l, i) =>
+                            i !== props.project.language.length - 1
+                                ? `${l}, `
+                                : l
+                        )}
+                    </small>
+                    <div className="project-info-btn">
+                        <a onClick={handleShowModal}>
+                            <i>
+                                <AiFillInfoCircle />
+                            </i>
+                            More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {showModal ? (
+                <div className="modal-background">
+                    <ProjectModal
+                        project={props.project}
+                        setShowModal={setShowModal}
+                    />
+                </div>
+            ) : null}
+        </div>
+    );
+}

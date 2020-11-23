@@ -1,0 +1,75 @@
+@import '../style/global/mixin.scss';
+@import '../style/global/variable.scss';
+
+.project-modal {
+    z-index: 100000 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+
+    .close {
+        position: absolute;
+        color: #000;
+        font-size: 30px;
+        font-weight: 900;
+        right: 15px;
+        bottom: 15px;
+
+        &:hover {
+            color: #c0a062;
+        }
+    }
+
+    img,
+    .project-modal-content {
+        width: 90vw;
+    }
+
+    .project-modal-content {
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .project-btn-group {
+        margin-top: 20px;
+        > a {
+            margin-right: 15px;
+        }
+
+        i {
+            padding-right: 5px;
+
+            &:first-child {
+                font-size: 18px;
+            }
+        }
+
+        a {
+            color: white;
+            text-transform: uppercase;
+            padding: 6px 10px;
+            background-color: #c0a062;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #a88e5b;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, desktop )) {
+    .project-modal {
+        top: 45%;
+
+        img,
+        .project-modal-content {
+            width: 50vw;
+        }
+    }
+}
