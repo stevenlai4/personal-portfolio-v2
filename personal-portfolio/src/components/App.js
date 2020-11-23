@@ -4,6 +4,7 @@ import Separator from './Separator';
 import Header from './header/Header';
 import About from './about/About';
 import Skill from './skill/Skill';
+import Experience from './experience/Experience';
 import Project from './project/Project';
 
 function App() {
@@ -47,6 +48,8 @@ function App() {
             <Skill />
             <Separator theme={theme} />
             <Project />
+            <Separator theme={theme} />
+            <Experience />
         </div>
     );
 }
