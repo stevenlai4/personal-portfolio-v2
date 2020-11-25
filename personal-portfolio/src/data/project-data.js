@@ -16,7 +16,7 @@ export const projects = [
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat.',
         category: ['CSS', 'Angular'],
-        language: ['HTML', 'Angular', 'SASS', 'Boostrap', 'JSON'],
+        language: ['HTML', 'Angular', 'SASS', 'Boostrap'],
         git:
             'https://github.com/stevenlai4/planet-wine-Angular/tree/main/planet-wine-angular',
         url: 'https://planet-wine-steven.netlify.app',
@@ -27,7 +27,7 @@ export const projects = [
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat.',
         category: ['CSS', 'Javascript'],
-        language: ['HTML', 'Javascript', 'SASS', 'Bootstrap', 'JSON'],
+        language: ['HTML', 'Javascript', 'SASS', 'Bootstrap'],
         git: 'https://github.com/stevenlai4/planet-wine',
         url: 'https://planet-wine-steven.netlify.app',
     },
