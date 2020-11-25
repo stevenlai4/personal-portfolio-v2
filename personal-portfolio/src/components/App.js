@@ -20,24 +20,52 @@ function App() {
     // Theme Handler
     const themeHandler = () => {
         const app = document.querySelector('.App');
-        const projectCatItems = document.querySelectorAll('.category-item p');
+        const skillCircles = document.querySelectorAll('.skill-circle');
+        const expTimelines = document.querySelectorAll('.timeline .year-line');
+        const expItems = document.querySelectorAll('.exp-item');
 
         if (theme === 'light') {
+            // General
             app.style =
                 'color: #000 !important; background-color: #fffaf0 !important;';
-            projectCatItems.forEach((projectCatItem) => {
-                projectCatItem.style = 'color: #000';
+
+            // Skill
+            skillCircles.forEach((skillCircle) => {
+                skillCircle.style = 'background-color: #fff; border: none; ';
+            });
+
+            // Experience
+            expTimelines.forEach((expTimeline) => {
+                expTimeline.style = 'color: #000';
+            });
+            expItems.forEach((expItem) => {
+                expItem.style =
+                    'color: #000; background-color: #fff; border: none;';
             });
         } else {
+            // General
             app.style = 'color: #fff !important; background-color: #000;';
-            projectCatItems.forEach((projectCatItem) => {
-                projectCatItem.style = 'color: #fff';
+
+            // Skill
+            skillCircles.forEach((skillCircle) => {
+                skillCircle.style =
+                    'background-color: #000; border: 1px solid #fff; ';
+            });
+
+            // Experience
+            expTimelines.forEach((expTimeline) => {
+                expTimeline.style = 'color: #c0a062';
+            });
+            expItems.forEach((expItem) => {
+                expItem.style =
+                    'color: #fff; background-color: #000; border: 1px solid #fff;';
             });
         }
     };
 
     useEffect(() => {
         themeHandler();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [theme]);
 
     return (
@@ -47,7 +75,7 @@ function App() {
             <Separator theme={theme} />
             <Skill />
             <Separator theme={theme} />
-            <Project />
+            <Project theme={theme} />
             <Separator theme={theme} />
             <Experience />
         </div>

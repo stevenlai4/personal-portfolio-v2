@@ -14,7 +14,13 @@ export default function ProjectItem(props) {
         <div className="project-item">
             <div className="project-card">
                 <img src={props.project.image} alt={props.project.name} />
-                <div className="project-card-body">
+                <div
+                    className="project-card-body"
+                    style={{
+                        backgroundColor:
+                            props.theme === 'light' ? '#fff' : '#000',
+                    }}
+                >
                     <h2>{props.project.name}</h2>
                     <small>
                         {props.project.language.map((l, i) =>

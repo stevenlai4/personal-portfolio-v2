@@ -31,4 +31,4 @@ export const experiences = [
     },
 ];
 
-export const years = ['2017', '2018', '2019'];
+export const years = ['2019', '2018', '2017'];

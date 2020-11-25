@@ -1,0 +1,25 @@
+@import '../style/global/variable.scss';
+
+.exp-item {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+
+    .company {
+        font-size: 15px;
+    }
+
+    .date {
+        font-size: 13px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, tablet )) {
+    .exp-item {
+        width: 84%;
+        margin-left: 15%;
+        margin-bottom: 30px;
+    }
+}

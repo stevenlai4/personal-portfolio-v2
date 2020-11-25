@@ -1,0 +1,46 @@
+@import '../style/global/variable.scss';
+
+.exp-category {
+    position: relative;
+    margin-bottom: 20px;
+
+    .timeline {
+        display: none;
+    }
+
+    .spacing {
+        display: none;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, tablet )) {
+    .exp-category {
+        margin-bottom: 40px;
+
+        .timeline {
+            display: block;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+
+            width: 15%;
+            height: 100%;
+
+            .year {
+                align-self: center;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .year-line {
+                align-self: center;
+                height: 100%;
+                border-left: 6px solid;
+            }
+        }
+
+        .spacing {
+            display: block;
+            height: 50px;
+        }
+    }
+}

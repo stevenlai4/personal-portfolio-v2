@@ -19,13 +19,13 @@ export default function Project(props) {
             setFilterProject(filteredProject);
         }
     };
-
     useEffect(() => {
         handleFilterProject();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedCategory]);
 
     const createProjectModal = (project, i) => {
-        return <ProjectItem key={i} project={project} />;
+        return <ProjectItem key={i} theme={props.theme} project={project} />;
     };
 
     return (
