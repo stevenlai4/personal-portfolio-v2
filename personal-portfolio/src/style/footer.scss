@@ -1,0 +1,158 @@
+@import './global/variable.scss';
+
+// Hover effect for back-to-top button
+
+.footer {
+    text-align: center;
+    height: 320px;
+    background-color: #131414;
+    padding-top: 60px;
+    margin-top: 30px;
+    color: #808080;
+    position: relative;
+
+    .back-to-top {
+        background-color: #c0a062;
+        position: absolute;
+        top: -11%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: none;
+        padding: 18px 25px;
+        outline: none;
+
+        i {
+            font-size: 25px;
+            color: #fff;
+        }
+
+        @keyframes hover-effect {
+            0% {
+                transform: translate(-50%, 0%);
+            }
+            100% {
+                transform: translate(-50%, -10%);
+            }
+        }
+
+        animation-name: hover-effect;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .footer-left {
+        a {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #808080;
+            transition: color 0.5s ease-in-out;
+            i {
+                padding-right: 10px;
+                font-size: 25px;
+            }
+
+            &:hover {
+                color: #a8a5a5;
+            }
+        }
+    }
+
+    .footer-right {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0;
+            width: 50%;
+            margin: 20px auto;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    color: #808080;
+                    transition: color 0.5s ease-in-out;
+
+                    i {
+                        font-size: 35px;
+                    }
+
+                    &:hover {
+                        color: #a8a5a5;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, tablet )) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 250px;
+        padding-top: 30px;
+
+        text-align: left;
+
+        .footer-left {
+            padding-left: 60px;
+        }
+
+        .footer-right {
+            width: 45%;
+
+            ul {
+                margin: 0 auto 30px auto;
+
+                li {
+                    &:hover {
+                    }
+
+                    &:not(:last-of-type) {
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, desktop )) {
+    .footer {
+        .back-to-top {
+            animation: none;
+
+            &:hover {
+                @keyframes hover-effect {
+                    0% {
+                        transform: translate(-50%, 0%);
+                    }
+                    100% {
+                        transform: translate(-50%, -10%);
+                    }
+                }
+
+                animation-name: hover-effect;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+        }
+
+        .footer-right {
+            width: 30%;
+        }
+    }
+}

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import ThemeCard from './ThemeCard';
-// import CardBack from './CardBack';
 import Objective from './Objective';
 import Education from './Education';
 import '../../style/about.scss';
@@ -25,7 +24,7 @@ export default function About(props) {
     };
 
     return (
-        <section className="about container">
+        <section id="about" className="about container">
             <h1>ABOUT</h1>
             <div className="about-content">
                 <div className="row">
