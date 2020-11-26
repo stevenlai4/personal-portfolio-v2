@@ -6,6 +6,7 @@ import About from './about/About';
 import Skill from './skill/Skill';
 import Experience from './experience/Experience';
 import Project from './project/Project';
+import Competition from './competition/Competition';
 
 function App() {
     const [theme, setTheme] = useState(
@@ -78,6 +79,9 @@ function App() {
             <Project theme={theme} />
             <Separator theme={theme} />
             <Experience />
+            <Separator theme={theme} />
+            <Competition theme={theme} />
+            <Separator theme={theme} />
         </div>
     );
 }
