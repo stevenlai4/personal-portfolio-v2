@@ -30,12 +30,7 @@ export default function ProjectItem(props) {
                         )}
                     </small>
                     <div className="project-info-btn">
-                        <a onClick={handleShowModal}>
-                            <i>
-                                <AiFillInfoCircle />
-                            </i>
-                            More Info
-                        </a>
+                        <a onClick={handleShowModal}>More Info</a>
                     </div>
                 </div>
             </div>
