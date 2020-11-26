@@ -29,7 +29,7 @@ export default function Project(props) {
     };
 
     return (
-        <section className="project container">
+        <section id="project" className="project container">
             <h1>PROJECTS</h1>
             <div className="project-category-container">
                 <ProjectCategory

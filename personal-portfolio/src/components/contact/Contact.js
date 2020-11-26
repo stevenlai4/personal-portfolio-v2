@@ -3,12 +3,12 @@ import '../../style/contact.scss';
 
 export default function Contact(props) {
     return (
-        <div className="contact container">
+        <div id="contact" className="contact container">
             <h1>CONTACT</h1>
             <form
                 action="mailto:steven_lai4@hotmail.com"
                 method="post"
-                enctype="text/plain"
+                encType="text/plain"
             >
                 <div className="form-group name-form-group">
                     <input

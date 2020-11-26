@@ -9,9 +9,9 @@ export default function Experience() {
     };
 
     return (
-        <div className="experience container">
+        <section id="experience" className="experience container">
             <h1>EXPERIENCE</h1>
             {years.map(createExpCategory)}
-        </div>
+        </section>
     );
 }
