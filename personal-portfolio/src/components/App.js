@@ -6,6 +6,7 @@ import About from './about/About';
 import Skill from './skill/Skill';
 import Experience from './experience/Experience';
 import Project from './project/Project';
+import Contact from './contact/Contact';
 import Competition from './competition/Competition';
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
             <Separator theme={theme} />
             <Competition theme={theme} />
             <Separator theme={theme} />
+            <Contact theme={theme} />
         </div>
     );
 }

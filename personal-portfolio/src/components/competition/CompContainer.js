@@ -32,7 +32,11 @@ export default function CompContainer(props) {
         >
             <div className="blog-slider__wrp swiper-wrapper">
                 {competitions.map((competition, i) => (
-                    <CompItem key={i} competition={competition} />
+                    <CompItem
+                        key={i}
+                        theme={props.theme}
+                        competition={competition}
+                    />
                 ))}
             </div>
             <div className="blog-slider__pagination"></div>

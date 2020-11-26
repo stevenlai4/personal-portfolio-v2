@@ -22,6 +22,7 @@ export default function ProjectCategory(props) {
                 width: wid,
             });
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleCategorySelection = (e) => {
