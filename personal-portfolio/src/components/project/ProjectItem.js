@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ProjectModal from './ProjectModal';
-import { AiFillInfoCircle } from 'react-icons/ai';
 import '../../style/project-item.scss';
 
 export default function ProjectItem(props) {
@@ -30,7 +29,7 @@ export default function ProjectItem(props) {
                         )}
                     </small>
                     <div className="project-info-btn">
-                        <a onClick={handleShowModal}>More Info</a>
+                        <button onClick={handleShowModal}>More Info</button>
                     </div>
                 </div>
             </div>

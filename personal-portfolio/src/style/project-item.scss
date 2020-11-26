@@ -40,7 +40,7 @@
                 }
             }
 
-            a {
+            button {
                 position: absolute;
                 right: 15px;
                 bottom: 15px;
@@ -48,6 +48,7 @@
                 padding: 7px 20px;
                 background-color: #c0a062;
                 color: #fff;
+                border: none;
                 border-radius: 50px;
                 text-decoration: none;
                 cursor: pointer;
