@@ -4,9 +4,9 @@ import Banner from './Banner';
 
 export default function Header() {
     return (
-        <div>
+        <header>
             <Navigation />
             <Banner />
-        </div>
+        </header>
     );
 }

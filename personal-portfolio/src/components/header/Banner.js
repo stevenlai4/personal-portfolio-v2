@@ -1,4 +1,5 @@
 import React from 'react';
+import { RiArrowDownSLine } from 'react-icons/ri';
 import '../../style/banner.scss';
 import Typical from 'react-typical';
 
@@ -27,6 +28,10 @@ export default function Banner() {
                     />
                 </p>
             </div>
+
+            <i>
+                <RiArrowDownSLine />
+            </i>
         </div>
     );
 }
