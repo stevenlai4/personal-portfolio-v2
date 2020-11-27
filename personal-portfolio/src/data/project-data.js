@@ -88,8 +88,8 @@ export const projects = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat.',
         category: ['CSS', 'React'],
         language: ['HTML', 'SASS', 'Bootstrap', 'React'],
-        git: 'https://github.com/stevenlai4/personal-portfolio',
-        url: 'https://chaochunlai.netlify.app/',
+        git: 'https://github.com/stevenlai4/personal-portfolio-v2',
+        url: 'https://chaochunlai-v2.netlify.app/',
     },
     {
         name: 'Flight Registration System',

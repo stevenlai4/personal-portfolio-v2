@@ -39,7 +39,6 @@ export default function footer() {
                     </i>
                     steven_lai4@hotmail.com
                 </a>
-                {/*// eslint-disable-next-line react-hooks/exhaustive-deps*/}
                 <a>
                     <i>
                         <MdLocationOn />
