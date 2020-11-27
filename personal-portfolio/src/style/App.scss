@@ -4,16 +4,3 @@
     overflow: hidden;
     transition: opacity 0.5s 0s ease-out;
 }
-
-.loading-bg {
-    position: relative;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    transition: all 1s;
-
-    > * {
-        align-self: center;
-    }
-}
