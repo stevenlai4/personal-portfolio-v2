@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProjectModal from './ProjectModal';
 import '../../style/project-item.scss';
+import LazyLoad from 'react-lazyload';
 
 export default function ProjectItem(props) {
     const [showModal, setShowModal] = useState(false);
@@ -12,7 +13,9 @@ export default function ProjectItem(props) {
     return (
         <div className="project-item">
             <div className="project-card">
-                <img src={props.project.image} alt={props.project.name} />
+                <LazyLoad height={300} offset={100}>
+                    <img src={props.project.image} alt={props.project.name} />
+                </LazyLoad>
                 <div
                     className="project-card-body"
                     style={{

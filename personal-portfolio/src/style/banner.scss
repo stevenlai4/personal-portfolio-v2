@@ -10,18 +10,20 @@
     justify-content: center;
     position: relative;
 
-    .banner-text {
+    .lazyload-wrapper {
         align-self: center;
-        color: #fff !important;
+        .banner-text {
+            color: #fff !important;
 
-        h1 {
-            font-size: 45px;
-            font-weight: 400;
-        }
+            h1 {
+                font-size: 45px;
+                font-weight: 400;
+            }
 
-        p {
-            text-align: center;
-            font-size: 20px;
+            p {
+                text-align: center;
+                font-size: 20px;
+            }
         }
     }
 
@@ -52,13 +54,15 @@
 
 @media screen and (min-width: map-get($breakpoints, tablet)) {
     .banner {
-        .banner-text {
-            h1 {
-                font-size: 80px;
-            }
+        .lazyload-wrapper {
+            .banner-text {
+                h1 {
+                    font-size: 80px;
+                }
 
-            p {
-                font-size: 30px;
+                p {
+                    font-size: 30px;
+                }
             }
         }
     }
@@ -68,15 +72,17 @@
     .banner {
         justify-content: left;
 
-        .banner-text {
-            padding-left: 90px;
+        .lazyload-wrapper {
+            .banner-text {
+                padding-left: 90px;
 
-            h1 {
-                font-size: 85px;
-            }
+                h1 {
+                    font-size: 85px;
+                }
 
-            p {
-                font-size: 30px;
+                p {
+                    font-size: 30px;
+                }
             }
         }
     }
