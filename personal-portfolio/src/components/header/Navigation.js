@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import $ from 'jquery';
 import '../../style/navigation.scss';
@@ -36,7 +36,7 @@ export default function Navigation() {
 
     return (
         <Navbar className={navbar ? 'active' : ''} fixed="top" expand="lg">
-            <Navbar.Brand className="d-lg-block d-none" href="#home">
+            <Navbar.Brand className="d-lg-block d-none" href="#">
                 <img
                     src="images/logo-light.png"
                     width="75"
