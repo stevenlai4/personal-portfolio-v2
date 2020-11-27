@@ -4,3 +4,11 @@
     overflow: hidden;
     transition: opacity 0.5s 0s ease-out;
 }
+
+.loading-bg {
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
