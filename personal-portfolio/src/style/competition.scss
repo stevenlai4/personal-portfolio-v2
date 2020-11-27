@@ -2,7 +2,8 @@
 @import './global/variable.scss';
 
 .competition {
-    padding: $section-tb-padding;
+    padding-top: $section-tb-padding;
+    padding-bottom: $section-tb-padding;
 
     @include section-title;
 }

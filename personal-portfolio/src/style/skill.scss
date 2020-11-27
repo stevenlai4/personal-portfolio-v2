@@ -2,6 +2,7 @@
 @import './global/variable.scss';
 
 .skill {
-    padding: $section-tb-padding;
+    padding-top: $section-tb-padding;
+    padding-bottom: $section-tb-padding;
     @include section-title;
 }
