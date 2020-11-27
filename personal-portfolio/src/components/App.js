@@ -9,11 +9,14 @@ import Project from './project/Project';
 import Competition from './competition/Competition';
 import Contact from './contact/Contact';
 import Footer from './Footer';
+import { TraceSpinner } from 'react-spinners-kit';
 
 function App() {
+    //States
     const [theme, setTheme] = useState(
         localStorage.getItem('theme') ?? 'light'
     );
+    const [isLoading, setIsLoading] = useState(true);
 
     // Hand theme color function
     const handleThemeColor = (newTheme) => {
@@ -67,11 +70,23 @@ function App() {
     };
 
     useEffect(() => {
-        themeHandler();
+        setTimeout(() => setIsLoading(false), 3000);
+    }, []);
+
+    useEffect(() => {
+        if (isLoading) {
+            setTimeout(() => themeHandler(), 3000);
+        } else {
+            themeHandler();
+        }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [theme]);
 
-    return (
+    return isLoading ? (
+        <div className="loading-bg">
+            <TraceSpinner size={80} frontColor="#c0a062" loading={isLoading} />
+        </div>
+    ) : (
         <div className="App">
             <Header />
             <About theme={theme} onThemeChange={handleThemeColor} />
