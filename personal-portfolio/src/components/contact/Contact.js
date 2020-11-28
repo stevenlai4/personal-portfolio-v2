@@ -15,11 +15,7 @@ export default function Contact(props) {
             ref={ref}
         >
             <h1>CONTACT</h1>
-            <form
-                action="mailto:steven_lai4@hotmail.com"
-                method="post"
-                encType="text/plain"
-            >
+            <form action="https://formspree.io/f/moqpnwge" method="POST">
                 <div className="form-group name-form-group">
                     <input
                         id="name"
