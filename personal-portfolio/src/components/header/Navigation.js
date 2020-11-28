@@ -12,6 +12,8 @@ export default function Navigation() {
             $('.navbar').css('height').replace('px', '')
         );
 
+        $('.navbar-collapse').removeClass('show');
+
         $('html, body').animate(
             {
                 scrollTop:
