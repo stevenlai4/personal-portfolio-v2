@@ -41,8 +41,8 @@ export default function Navigation() {
             <Navbar.Brand className="d-lg-block d-none" href="#">
                 <img
                     src="images/logo-light.png"
-                    width="75"
-                    height="75"
+                    width="60"
+                    height="60"
                     className="d-inline-block align-top navbrand"
                     alt="Logo"
                 />

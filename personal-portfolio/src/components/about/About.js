@@ -4,9 +4,14 @@ import ThemeCard from './ThemeCard';
 import Objective from './Objective';
 import Education from './Education';
 import '../../style/about.scss';
+import { useInView } from 'react-intersection-observer';
 
 export default function About(props) {
     const [isFlipped, setIsFlipped] = useState(false);
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.03,
+    });
 
     const handleCardFlip = () => {
         setIsFlipped(!isFlipped);
@@ -28,7 +33,12 @@ export default function About(props) {
             <h1>ABOUT</h1>
             <div className="about-content">
                 <div className="row">
-                    <div className="col-lg-4 order-lg-2 col-12">
+                    <div
+                        ref={ref}
+                        className={`col-lg-4 order-lg-2 col-12 fade-in ${
+                            inView ? 'appear' : ''
+                        }`}
+                    >
                         <ReactCardFlip
                             isFlipped={isFlipped}
                             flipDirection="horizontal"
@@ -38,10 +48,20 @@ export default function About(props) {
                             {createThemeCard()}
                         </ReactCardFlip>
                     </div>
-                    <div className="col-lg-4 order-lg-1 col-12">
+                    <div
+                        ref={ref}
+                        className={`col-lg-4 order-lg-1 col-12 from-left ${
+                            inView ? 'appear' : ''
+                        }`}
+                    >
                         <Objective />
                     </div>
-                    <div className="col-lg-4 order-lg-3 col-12">
+                    <div
+                        ref={ref}
+                        className={`col-lg-4 order-lg-3 col-12 from-right ${
+                            inView ? 'appear' : ''
+                        }`}
+                    >
                         <Education />
                     </div>
                 </div>

@@ -1,9 +1,15 @@
 import React from 'react';
 import ExpItem from './ExpItem';
 import { experiences } from '../../data/experience-data';
+import { useInView } from 'react-intersection-observer';
 import '../../style/experience-category.scss';
 
 export default function ExpCategory(props) {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     // Create experience items in each category
     const createExpItems = () => {
         const filteredExps = experiences.filter(
@@ -23,7 +29,12 @@ export default function ExpCategory(props) {
         <div className="exp-category">
             <div className="timeline">
                 <h2 className="year">{props.year}</h2>
-                <div className="year-line"></div>
+                <div
+                    ref={ref}
+                    className={`year-line increase-height ${
+                        inView ? 'appear' : ''
+                    }`}
+                ></div>
             </div>
             <div className="spacing"></div>
             <div className="exp-item-container">{createExpItems()}</div>

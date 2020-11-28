@@ -5,6 +5,7 @@ import { projects, projectCategory } from '../../data/project-data';
 import '../../style/project.scss';
 
 export default function Project(props) {
+    var delay = 0;
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [filterProject, setFilterProject] = useState(projects);
 
@@ -24,8 +25,17 @@ export default function Project(props) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedCategory]);
 
-    const createProjectModal = (project, i) => {
-        return <ProjectItem key={i} theme={props.theme} project={project} />;
+    const createProjectItem = (project, i) => {
+        delay += 0.05;
+
+        return (
+            <ProjectItem
+                key={i}
+                theme={props.theme}
+                project={project}
+                delay={delay}
+            />
+        );
     };
 
     return (
@@ -39,7 +49,7 @@ export default function Project(props) {
                 />
             </div>
             <div className="row row-cols-lg-3 row-cols-md-2 row-cols-1 project-container">
-                {filterProject.map(createProjectModal)}
+                {filterProject.map(createProjectItem)}
             </div>
         </section>
     );

@@ -2,16 +2,25 @@ import React, { useState } from 'react';
 import ProjectModal from './ProjectModal';
 import '../../style/project-item.scss';
 import LazyLoad from 'react-lazyload';
+import { useInView } from 'react-intersection-observer';
 
 export default function ProjectItem(props) {
     const [showModal, setShowModal] = useState(false);
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
 
     const handleShowModal = () => {
         setShowModal(true);
     };
 
     return (
-        <div className="project-item">
+        <div
+            ref={ref}
+            className={`project-item from-bottom ${inView ? 'appear' : ''}`}
+            style={{ transitionDelay: `${props.delay}s` }}
+        >
             <div className="project-card">
                 <LazyLoad height={300} offset={100}>
                     <img src={props.project.image} alt={props.project.name} />

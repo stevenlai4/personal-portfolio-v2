@@ -1,9 +1,19 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import '../../style/contact.scss';
 
 export default function Contact(props) {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.3,
+    });
+
     return (
-        <div id="contact" className="contact container">
+        <div
+            id="contact"
+            className={`contact container fade-in ${inView ? 'appear' : ''}`}
+            ref={ref}
+        >
             <h1>CONTACT</h1>
             <form
                 action="mailto:steven_lai4@hotmail.com"

@@ -4,4 +4,11 @@
     overflow: hidden;
     transition: opacity 0.5s 0s ease-out;
     position: relative;
+    scroll-behavior: smooth;
+
+    @include fade-in;
+    @include from-bottom;
+    @include from-left;
+    @include from-right;
+    @include increase-height;
 }

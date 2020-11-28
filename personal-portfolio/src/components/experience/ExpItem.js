@@ -1,10 +1,19 @@
 import React from 'react';
 import parse from 'html-react-parser';
+import { useInView } from 'react-intersection-observer';
 import '../../style/experience-item.scss';
 
 export default function ExpItem(props) {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.3,
+    });
+
     return (
-        <div className="exp-item card">
+        <div
+            ref={ref}
+            className={`exp-item card from-right ${inView ? 'appear' : ''}`}
+        >
             <div className="card-body">
                 <h4 className="card-title">
                     <b>{props.filteredExp.title}</b>

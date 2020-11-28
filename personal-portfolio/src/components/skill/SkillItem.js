@@ -1,7 +1,13 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import '../../style/skillitem.scss';
 
 export default function SkillItem(props) {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.3,
+    });
+
     const addSkillFlip = () => {
         const skillCircles = document.querySelectorAll('.skill-circle');
         skillCircles.forEach((skillCircle) => {
@@ -17,7 +23,13 @@ export default function SkillItem(props) {
     };
 
     return (
-        <div className="skill-item">
+        <div
+            ref={ref}
+            className={`skill-item from-${props.direction} ${
+                inView ? 'appear' : ''
+            }`}
+            style={{ transitionDelay: `${props.delay}s` }}
+        >
             <div
                 className="skill-circle"
                 onMouseOver={addSkillFlip}
