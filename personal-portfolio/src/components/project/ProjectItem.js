@@ -16,12 +16,12 @@ export default function ProjectItem(props) {
     };
 
     return (
-        <div
-            ref={ref}
-            className={`project-item from-bottom ${inView ? 'appear' : ''}`}
-            style={{ transitionDelay: `${props.delay}s` }}
-        >
-            <div className="project-card">
+        <div className="project-item">
+            <div
+                className={`project-card from-bottom ${inView ? 'appear' : ''}`}
+                style={{ transitionDelay: `${props.delay}s` }}
+                ref={ref}
+            >
                 <LazyLoad height={300} offset={100}>
                     <img src={props.project.image} alt={props.project.name} />
                 </LazyLoad>
