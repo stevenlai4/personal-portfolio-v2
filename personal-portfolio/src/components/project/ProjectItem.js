@@ -18,7 +18,7 @@ export default function ProjectItem(props) {
     return (
         <div className="project-item">
             <div
-                className={`project-card from-bottom ${inView ? 'appear' : ''}`}
+                className={`project-card fade-in ${inView ? 'appear' : ''}`}
                 style={{ transitionDelay: `${props.delay}s` }}
                 ref={ref}
             >

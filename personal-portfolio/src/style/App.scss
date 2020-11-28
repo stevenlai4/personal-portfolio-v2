@@ -7,7 +7,6 @@
     scroll-behavior: smooth;
 
     @include fade-in;
-    @include from-bottom;
     @include from-left;
     @include from-right;
     @include increase-height;
