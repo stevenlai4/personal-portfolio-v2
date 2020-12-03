@@ -11,8 +11,8 @@ export default function Banner(props) {
             style={{
                 backgroundImage:
                     props.theme === 'light'
-                        ? "url('/images/banner_light.png')"
-                        : "url('/images/banner_dark.png')",
+                        ? "url('/images/banner_light.jpg')"
+                        : "url('/images/banner_dark.jpg')",
             }}
         >
             <LazyLoad height={800}>
