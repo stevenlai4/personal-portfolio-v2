@@ -8,7 +8,6 @@
     border-radius: 25px;
     height: 500px;
     border: 1px solid #fffaf0;
-    transition: background-color 0.8s;
 
     @media screen and (max-width: 992px) {
         max-width: 680px;
@@ -155,7 +154,6 @@
 
     &__button {
         display: inline-flex;
-        transition: background-color 0.8s !important;
         padding: 15px 35px;
         border-radius: 50px;
         text-decoration: none;

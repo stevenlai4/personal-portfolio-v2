@@ -66,7 +66,7 @@ function App(props) {
             // Skill
             skillCircles.forEach((skillCircle) => {
                 skillCircle.style =
-                    'background-color: #181818; border: 1px solid #fff; color: #c0a062;';
+                    'background-color: #181818; border: 1px solid #fffaf7; color: #c0a062;';
             });
 
             // Experience

@@ -35,6 +35,7 @@ export default function CompContainer(props) {
             ref={ref}
             style={{
                 backgroundColor: props.theme === 'light' ? '#fff' : '#181818',
+                transition: 'background-color 0.8s',
             }}
         >
             <div className="blog-slider__wrp swiper-wrapper">
