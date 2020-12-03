@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SkillItem from './SkillItem';
 import '../../style/skillset.scss';
 

@@ -29,7 +29,7 @@ export default function ProjectItem(props) {
                     className="project-card-body"
                     style={{
                         backgroundColor:
-                            props.theme === 'light' ? '#fff' : '#000',
+                            props.theme === 'light' ? '#fff' : '#181818',
                     }}
                 >
                     <h2>{props.project.name}</h2>

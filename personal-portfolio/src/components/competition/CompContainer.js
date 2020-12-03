@@ -34,16 +34,12 @@ export default function CompContainer(props) {
             className={`blog-slider fade-in ${inView ? 'appear' : ''}`}
             ref={ref}
             style={{
-                backgroundColor: props.theme === 'light' ? '#fff' : '#000',
+                backgroundColor: props.theme === 'light' ? '#fff' : '#181818',
             }}
         >
             <div className="blog-slider__wrp swiper-wrapper">
                 {competitions.map((competition, i) => (
-                    <CompItem
-                        key={i}
-                        theme={props.theme}
-                        competition={competition}
-                    />
+                    <CompItem key={i} competition={competition} />
                 ))}
             </div>
             <div className="blog-slider__pagination"></div>

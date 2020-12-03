@@ -1,8 +1,9 @@
 @import './global/mixin.scss';
+@import '../style//global/variable.scss';
 
 .App {
     overflow: hidden;
-    transition: opacity 0.5s 0s ease-out;
+    transition: all 0.8s;
     position: relative;
     scroll-behavior: smooth;
 
@@ -10,4 +11,11 @@
     @include from-left;
     @include from-right;
     @include increase-height;
+
+    .react-card-flip {
+        position: fixed;
+        bottom: 1.5%;
+        right: 1.5%;
+        cursor: pointer;
+    }
 }

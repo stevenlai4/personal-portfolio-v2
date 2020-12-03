@@ -19,20 +19,12 @@ export default function ThemeCard(props) {
             <div className="theme-card">
                 <img
                     className="theme-pic"
-                    width="280px"
-                    height="280px"
+                    width="50px"
+                    height="50px"
                     src={`images/${
                         props.theme === 'light' ? 'sun' : 'moon'
                     }.png`}
                     alt="theme pic"
-                />
-
-                <img
-                    className="selfie"
-                    src="images/selfie.jpeg"
-                    width="200px"
-                    height="200px"
-                    alt="selfie"
                     onClick={handleThemeChange}
                 />
             </div>

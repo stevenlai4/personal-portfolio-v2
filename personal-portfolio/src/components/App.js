@@ -1,5 +1,7 @@
 import '../style/App.scss';
 import React, { useState, useEffect } from 'react';
+import ReactCardFlip from 'react-card-flip';
+import ThemeCard from './ThemeCard';
 import Separator from './Separator';
 import Header from './header/Header';
 import About from './about/About';
@@ -12,57 +14,65 @@ import Footer from './Footer';
 
 function App(props) {
     //States
-    const [theme, setTheme] = useState(
-        localStorage.getItem('theme') ?? 'light'
-    );
+    const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'dark');
+    const [isFlipped, setIsFlipped] = useState(false);
 
-    // Hand theme color function
+    // Handle theme color function
     const handleThemeColor = (newTheme) => {
         setTheme(newTheme);
+    };
+
+    // Handle card flip
+    const handleCardFlip = () => {
+        setIsFlipped(!isFlipped);
+    };
+
+    // Create ThemeCard Component function
+    const createThemeCard = () => {
+        return (
+            <ThemeCard
+                theme={theme}
+                onThemeChange={setTheme}
+                handleSelfieFlip={handleCardFlip}
+            />
+        );
     };
 
     // Theme Handler
     const themeHandler = () => {
         const app = document.querySelector('.App');
         const skillCircles = document.querySelectorAll('.skill-circle');
-        const expTimelines = document.querySelectorAll('.timeline .year-line');
         const expItems = document.querySelectorAll('.exp-item');
 
         if (theme === 'light') {
             // General
             app.style =
-                'color: #000 !important; background-color: #fffaf0 !important;';
-
+                'color: #000 !important; background-color: #fffaf7 !important;';
             // Skill
             skillCircles.forEach((skillCircle) => {
-                skillCircle.style = 'background-color: #fff; border: none; ';
+                skillCircle.style =
+                    'background-color: #fff; border: none; color: #c0a062;';
             });
 
             // Experience
-            expTimelines.forEach((expTimeline) => {
-                expTimeline.style = 'color: #000';
-            });
             expItems.forEach((expItem) => {
                 expItem.style =
                     'color: #000; background-color: #fff; border: none;';
             });
         } else {
             // General
-            app.style = 'color: #fff !important; background-color: #000;';
+            app.style = 'color: #fff !important; background-color: #181818;';
 
             // Skill
             skillCircles.forEach((skillCircle) => {
                 skillCircle.style =
-                    'background-color: #000; border: 1px solid #fff; ';
+                    'background-color: #181818; border: 1px solid #fff; color: #c0a062;';
             });
 
             // Experience
-            expTimelines.forEach((expTimeline) => {
-                expTimeline.style = 'color: #c0a062';
-            });
             expItems.forEach((expItem) => {
                 expItem.style =
-                    'color: #fff; background-color: #000; border: 1px solid #fff;';
+                    'color: #fff; background-color: #181818; border: 1px solid #fff;';
             });
         }
     };
@@ -75,19 +85,27 @@ function App(props) {
 
     return (
         <div className="App">
-            <Header />
+            <Header theme={theme} />
             <About theme={theme} onThemeChange={handleThemeColor} />
             <Separator theme={theme} />
             <Skill />
             <Separator theme={theme} />
             <Project theme={theme} />
             <Separator theme={theme} />
-            <Experience />
+            <Experience theme={theme} />
             <Separator theme={theme} />
             <Competition theme={theme} />
             <Separator theme={theme} />
             <Contact theme={theme} />
             <Footer />
+            <ReactCardFlip
+                isFlipped={isFlipped}
+                flipDirection="horizontal"
+                infinite="true"
+            >
+                {createThemeCard()}
+                {createThemeCard()}
+            </ReactCardFlip>
         </div>
     );
 }

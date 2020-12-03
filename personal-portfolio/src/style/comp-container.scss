@@ -8,6 +8,7 @@
     border-radius: 25px;
     height: 500px;
     border: 1px solid #fffaf0;
+    transition: background-color 0.8s;
 
     @media screen and (max-width: 992px) {
         max-width: 680px;
@@ -37,20 +38,20 @@
             .blog-slider__img {
                 img {
                     opacity: 1;
-                    transition-delay: 0.5s;
+                    transition-delay: 0.3s;
                 }
             }
             .blog-slider__content {
                 > * {
                     opacity: 1;
                     transform: none;
-                    transition-delay: 0.3s;
+                    // transition-delay: 0.3s;
 
-                    @for $i from 0 to 15 {
-                        &:nth-child(#{$i + 1}) {
-                            transition-delay: $i * 0.1 + 0.3s;
-                        }
-                    }
+                    // @for $i from 0 to 15 {
+                    //     &:nth-child(#{$i + 1}) {
+                    //         transition-delay: $i * 0.1 + 0.3s;
+                    //     }
+                    // }
                 }
             }
         }
@@ -72,7 +73,7 @@
             object-fit: cover;
             display: block;
             border-radius: 20px;
-            transition: all 0.3s;
+            transition: all 0.8s;
         }
 
         @media screen and (max-width: 992px) {
@@ -107,7 +108,7 @@
         > * {
             opacity: 0;
             transform: translateY(25px);
-            transition: all 0.4s;
+            transition: all 0.8s;
         }
     }
 
@@ -154,7 +155,7 @@
 
     &__button {
         display: inline-flex;
-        background-color: #c0a062;
+        transition: background-color 0.8s !important;
         padding: 15px 35px;
         border-radius: 50px;
         text-decoration: none;
@@ -163,6 +164,7 @@
         text-align: center;
         letter-spacing: 1px;
         color: #fff;
+        background-color: #c0a062;
 
         &:hover {
             text-decoration: none;
@@ -213,7 +215,7 @@
             border-radius: 10px;
             border: 1px solid #fff;
             opacity: 0.5;
-            transition: all 0.4s;
+            transition: all 0.8s;
             &-active {
                 opacity: 1;
                 background: #c0a062 !important;

@@ -39,7 +39,11 @@ export default function footer() {
                     </i>
                     steven_lai4@hotmail.com
                 </a>
-                <a>
+                <a
+                    href="https://www.google.ca/maps/place/Coquitlam,+BC/@49.2851173,-122.8266314,12z/data=!3m1!4b1!4m5!3m4!1s0x548678c85ac25e9f:0x595768762eee76cf!8m2!3d49.2837626!4d-122.7932065"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <i>
                         <MdLocationOn />
                     </i>

@@ -4,9 +4,17 @@ import '../../style/banner.scss';
 import Typical from 'react-typical';
 import LazyLoad from 'react-lazyload';
 
-export default function Banner() {
+export default function Banner(props) {
     return (
-        <div className="banner">
+        <div
+            className="banner"
+            style={{
+                backgroundImage:
+                    props.theme === 'light'
+                        ? "url('/images/banner_light.png')"
+                        : "url('/images/banner_dark.png')",
+            }}
+        >
             <LazyLoad height={800}>
                 <div className="banner-text">
                     <h1>Chao Chun Lai</h1>
@@ -17,15 +25,13 @@ export default function Banner() {
                             wrapper="b"
                             steps={[
                                 'SFU Graduate',
-                                3000,
+                                2000,
                                 'BCIT SSD Student',
-                                3000,
+                                2000,
                                 'Full-Stack Developer',
-                                3000,
-                                'Designer',
-                                3000,
+                                2000,
                                 'Guitarist',
-                                3000,
+                                2000,
                             ]}
                         />
                     </p>

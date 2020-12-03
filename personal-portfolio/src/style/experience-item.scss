@@ -3,16 +3,20 @@
 .exp-item {
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.45);
 
-    .company {
-        font-size: 15px;
-    }
+    .card-body {
+        transition: background-color 0.8s;
 
-    .date {
-        font-size: 13px;
-    }
+        .company {
+            font-size: 15px;
+        }
 
-    li {
-        margin-bottom: 5px;
+        .date {
+            font-size: 13px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
     }
 }
 

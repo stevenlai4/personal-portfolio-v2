@@ -9,7 +9,7 @@ export default function Contact(props) {
     });
 
     return (
-        <div
+        <section
             id="contact"
             className={`contact container fade-in ${inView ? 'appear' : ''}`}
             ref={ref}
@@ -93,6 +93,6 @@ export default function Contact(props) {
                     value="SUBMIT"
                 />
             </form>
-        </div>
+        </section>
     );
 }

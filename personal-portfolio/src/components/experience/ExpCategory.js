@@ -7,7 +7,7 @@ import '../../style/experience-category.scss';
 export default function ExpCategory(props) {
     const [ref, inView] = useInView({
         triggerOnce: true,
-        threshold: 0.1,
+        threshold: 0.25,
     });
 
     // Create experience items in each category
@@ -19,7 +19,13 @@ export default function ExpCategory(props) {
         const result = [];
 
         for (let i = 0; i < filteredExps.length; i++) {
-            result.push(<ExpItem key={i} filteredExp={filteredExps[i]} />);
+            result.push(
+                <ExpItem
+                    key={i}
+                    filteredExp={filteredExps[i]}
+                    theme={props.theme}
+                />
+            );
         }
 
         return result;

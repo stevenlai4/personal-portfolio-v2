@@ -6,11 +6,12 @@
             width: 100%;
             border-radius: 10px 10px 0 0;
             box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2);
-            border-top: 1px solid #fffaf0;
-            border-right: 1px solid #fffaf0;
-            border-left: 1px solid #fffaf0;
+            border-top: 1px solid #fffaf7;
+            border-right: 1px solid #fffaf7;
+            border-left: 1px solid #fffaf7;
         }
         .project-card-body {
+            transition: background-color 0.8s;
             position: relative;
             border-radius: 0 0 10px 10px;
             min-height: 160px;
@@ -18,9 +19,9 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             border-radius: 0 0 10px 10px;
-            border-bottom: 1px solid #fffaf0;
-            border-right: 1px solid #fffaf0;
-            border-left: 1px solid #fffaf0;
+            border-bottom: 1px solid #fffaf7;
+            border-right: 1px solid #fffaf7;
+            border-left: 1px solid #fffaf7;
 
             h2 {
                 font-size: 25px;
@@ -41,12 +42,13 @@
             }
 
             button {
+                transition: background-color 0.8s;
+                background-color: #c0a062;
                 position: absolute;
                 right: 15px;
                 bottom: 15px;
                 text-transform: uppercase;
                 padding: 7px 20px;
-                background-color: #c0a062;
                 color: #fff;
                 border: none;
                 border-radius: 50px;
@@ -54,7 +56,7 @@
                 outline: none;
                 cursor: pointer;
                 &:hover {
-                    background: lighten(#c0a062, 2.5);
+                    background: darken(#c0a062, 2.5);
                     box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
                     transform: translateY(-4px);
                     transition: all 0.25s 0s ease-out;

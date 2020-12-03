@@ -2,13 +2,13 @@
 
 .banner {
     height: 100vh;
-    background-image: url('../images/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     position: relative;
+    transition: all 0.8s;
 
     .lazyload-wrapper {
         align-self: center;

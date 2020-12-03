@@ -3,15 +3,13 @@ import React from 'react';
 export default function Objective() {
     return (
         <div className="objective">
-            <h4>Objective</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <span className="hi">HI!</span> I am <b>Steven Lai</b>. A{' '}
+                <b>team-oriented</b>, <b>meticulous</b>, and <b>innovative</b>{' '}
+                Full-Stack web Developer with <b>1</b> year of experience
+                building various types of websites using <b>HTML</b>,{' '}
+                <b>CSS/SASS</b>, <b>JavaScript</b>, <b>SQL</b>, <b>React</b>,
+                &amp; <b>ASP .NET</b>.
             </p>
         </div>
     );

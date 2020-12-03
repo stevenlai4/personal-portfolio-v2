@@ -14,7 +14,13 @@ export default function ExpItem(props) {
             ref={ref}
             className={`exp-item card from-right ${inView ? 'appear' : ''}`}
         >
-            <div className="card-body">
+            <div
+                className="card-body"
+                style={{
+                    backgroundColor:
+                        props.theme === 'light' ? '#fff' : '#181818',
+                }}
+            >
                 <h4 className="card-title">
                     <b>{props.filteredExp.title}</b>
                 </h4>

@@ -1,60 +1,76 @@
 @import '../style//global/variable.scss';
 @import '../style/global/mixin.scss';
 
-// Inheritance
-%sub-section-shared {
-    h4 {
-        text-decoration: underline;
-        font-weight: 40;
-    }
-    p {
-        font-style: italic;
-    }
-}
-
 .about {
     padding-top: $section-tb-padding;
     padding-bottom: $section-tb-padding;
 
     @include section-title;
 
-    .react-card-flip {
-        .theme-card {
-            position: relative;
-            display: flex;
-            justify-content: center;
-
-            .selfie {
-                @include center-item;
-                border-radius: $circular-image;
-
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-        }
-    }
     .objective {
         margin-top: 40px;
 
-        @extend %sub-section-shared;
-
         p {
-            text-align: justify;
+            margin: 0 5%;
+            font-size: 17px;
+            line-height: 40px;
+
+            .hi {
+                font-size: 55px;
+                padding-right: 3px;
+            }
+
+            b {
+                color: #c0a062;
+                font-size: 22px;
+                padding: 0 3px;
+            }
         }
     }
-    .education {
-        margin-top: 20px;
+}
 
-        @extend %sub-section-shared;
+@media screen and (min-width: map-get($breakpoints, tablet )) {
+    .about {
+        .objective {
+            p {
+                margin: 0 7%;
+                font-size: 18px;
+                line-height: 45px;
+
+                .hi {
+                    font-size: 60px;
+                    padding-right: 5px;
+                }
+
+                b {
+                    font-size: 23px;
+                    padding: 0 5px;
+                }
+            }
+        }
     }
 }
 
 @media screen and (min-width: map-get($breakpoints, desktop )) {
     .about {
-        .objective,
-        .education {
+        .objective {
             margin-top: 0;
+
+            p {
+                margin: 0 10%;
+                font-size: 20px;
+                line-height: 50px;
+
+                .hi {
+                    font-size: 70px;
+                    padding-right: 7px;
+                }
+
+                b {
+                    font-size: 27px;
+                    padding: 0 7px;
+                }
+            }
         }
     }
 }
