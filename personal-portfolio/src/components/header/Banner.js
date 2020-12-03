@@ -18,14 +18,17 @@ export default function Banner(props) {
             <LazyLoad height={800}>
                 <div className="banner-text">
                     <h1>Chao Chun Lai</h1>
-                    <p className="education">
+                    <div className="education">
                         <Typical
-                            loop={Infinity}
+                            wrapper="p"
                             steps={['2021 BCIT Web Developer Certificate']}
                         />
-
-                        <Typical steps={['2020 SFU Economics & CS Graduate']} />
-                    </p>
+                        <Typical
+                            wrapper="p"
+                            steps={['2020 SFU Economics & CS Graduate']}
+                        />
+                    </div>
+                    {/* <p className="education"></p> */}
                     {/* <p className="typical">
                         I am{' '}
                         <Typical
