@@ -7,7 +7,7 @@ export const experiences = [
         start_month: 'June',
         end_month: 'June',
         description:
-            '<ul><li>Greeted customers and demonstrated lobby leadership to deliver quality customer service.</li><li>Responsible for training onboarding team members in accordance with store operation standards.</li><li>Collaborated with the team seamlessly during peak hours and ensure products are served in a timely manner.</li><li>Perform support tasks such as restocking, cleaning tables and able to work under minimum supervision.</li></ul>',
+            '<ul><li>Greeted customers and demonstrated lobby leadership to deliver quality customer service.</li><li>Responsible for training onboarding team members in accordance with store operation standards.</li><li>Collaborated with the team seamlessly during peak hours and ensure products are served in a timely manner.</li><li>Performed support tasks such as restocking, cleaning tables and able to work under minimum supervision.</li></ul>',
     },
     {
         title: 'Software Application Intern',
@@ -17,7 +17,7 @@ export const experiences = [
         start_month: 'Sept',
         end_month: 'Dec',
         description:
-            '<ul><li>Utilized Android Studio and Python to develop testing applications and applied programs on Android and macOS operating systems.</li><li>Ability to test, repair and debug applications in order to improve the system performance.</li><li>Supported Research and Development department establishing advanced Artificial Intelligence (AI) Machines through testing applications.</li><li>Collected data through online search engines and generated insightful information using testing applications for AI Machine development.</li></ul>',
+            '<ul><li>Demonstrated strong OOP design ability by utilizing Java and Python to develop the testing application.</li><li>Ability to communicate and provide satisfactory solution for each client’s requests.</li><li>Increased 85% accuracy of face recognition AI model by providing insightful excel data to Research and Development department for analysis.</li><li>Enhanced AI model competency by collecting dataset through online search engines for AI machine learning development.</li></ul>',
     },
     {
         title: 'Staff',

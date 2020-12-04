@@ -21,31 +21,11 @@ export default function Banner(props) {
                     <div className="education">
                         <Typical
                             wrapper="p"
-                            steps={['2021 BCIT Web Developer Certificate']}
-                        />
-                        <Typical
-                            wrapper="p"
-                            steps={['2020 SFU Economics & CS Graduate']}
-                        />
-                    </div>
-                    {/* <p className="education"></p> */}
-                    {/* <p className="typical">
-                        I am{' '}
-                        <Typical
-                            loop={Infinity}
-                            wrapper="b"
                             steps={[
-                                'SFU Graduate',
-                                2000,
-                                'BCIT SSD Student',
-                                2000,
-                                'Full-Stack Developer',
-                                2000,
-                                'Guitarist',
-                                2000,
+                                'BCIT Web Developer Certificate / SFU Econ & CS Graduate',
                             ]}
                         />
-                    </p> */}
+                    </div>
                 </div>
             </LazyLoad>
 

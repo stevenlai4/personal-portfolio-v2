@@ -9,15 +9,15 @@ const htmlItemInfo = [
 const cssItems = ['CSS3', 'SASS', 'Bootstrap'];
 const cssItemInfo = [
     { percentage: 60, image: 'images/css3.png' },
-    { percentage: 50, image: 'images/sass.png' },
+    { percentage: 60, image: 'images/sass.png' },
     { percentage: 90, image: 'images/bootstrap.png' },
 ];
 
 // JS data
 const jsItems = ['React', 'Javascript', 'Angular', 'NodeJS'];
 const jsItemInfo = [
-    { percentage: 30, image: 'images/react.png' },
-    { percentage: 50, image: 'images/javascript.png' },
+    { percentage: 50, image: 'images/react.png' },
+    { percentage: 60, image: 'images/javascript.png' },
     { percentage: 20, image: 'images/angular.png' },
     { percentage: 30, image: 'images/nodejs.png' },
 ];

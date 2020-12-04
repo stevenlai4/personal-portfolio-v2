@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillGithub, AiOutlineClose } from 'react-icons/ai';
+import parser from 'html-react-parser';
 import { MdWeb } from 'react-icons/md';
 import '../../style/project-modal.scss';
 
@@ -16,12 +17,12 @@ export default function ProjectModal(props) {
             <img src={props.project.image} alt={props.project.name} />
             <div className="project-modal-content">
                 <h2>{props.project.name}</h2>
-                <small>
+                <p className="language">
                     {props.project.language.map((l, i) =>
                         i !== props.project.language.length - 1 ? `${l}, ` : l
                     )}
-                </small>
-                <p>{props.project.description}</p>
+                </p>
+                <p>{parser(props.project.description)}</p>
                 <div className="project-btn-group">
                     <a
                         href={props.project.git}
