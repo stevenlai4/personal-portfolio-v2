@@ -14,7 +14,7 @@ export const projects = [
         name: 'Planet Wine',
         image: 'images/planet-wine.png',
         description:
-            '<b>Goal:</b><p>Create an elegant e-commerce wine website with shopping, checkout, register, login, and contact functionalities</p><b>Learning Outcome:</b> <ul><li>Team collaboration through Github & communication</li><li>Implement price calculation & quantity limitation functinality</li><li>Apply intermediate Sass knowledge for styling</li></ul>',
+            '<b>Goal:</b><p>Create an elegant e-commerce wine website with shopping, checkout, register, login, and contact functionalities</p><b>Learning Outcome:</b> <ul><li>Team collaboration through Github & communication</li><li>Implement form input validation, product filter, and price manipulation through JavaScript</li><li>Apply intermediate Sass knowledge for styling</li></ul>',
         category: ['CSS', 'Javascript'],
         language: ['HTML', 'Javascript', 'SASS', 'Bootstrap'],
         git: 'https://github.com/stevenlai4/planet-wine',

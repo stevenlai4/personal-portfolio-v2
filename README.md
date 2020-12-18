@@ -1,6 +1,26 @@
 # Personal Protfolio
 
-## Section
+## Installation
+
+1. Change to directory personal-portfolio:
+
+```console
+    cd personal-portfolio
+```
+
+2. Install packages:
+
+```console
+    npm install
+```
+
+3. Run the app:
+
+```console
+    npm start
+```
+
+## Sections
 
 ### Nav & Banner
 

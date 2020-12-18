@@ -26,7 +26,7 @@ const jsItemInfo = [
 const beItems = ['Java', 'C#'];
 const beItemInfo = [
     { percentage: 80, image: 'images/java.png' },
-    { percentage: 10, image: 'images/c-sharp.png' },
+    { percentage: 30, image: 'images/c-sharp.png' },
 ];
 
 // Database data

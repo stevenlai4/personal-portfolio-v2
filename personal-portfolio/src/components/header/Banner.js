@@ -20,7 +20,6 @@ export default function Banner(props) {
                     <h1>Chao Chun Lai</h1>
                     <div className="education">
                         <Typical
-                            wrapper="p"
                             steps={[
                                 'BCIT Web Developer Certificate / SFU Econ & CS Graduate',
                             ]}

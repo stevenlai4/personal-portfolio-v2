@@ -23,14 +23,14 @@ export default function CompItem(props) {
                 <div className="blog-slider__text">
                     {parse(props.competition.description)}
                 </div>
-                <a
+                {/* <a
                     href={props.competition.url}
                     className="blog-slider__button"
                     target="_blank"
                     rel="noreferrer"
                 >
                     VISIT PROJECT
-                </a>
+                </a> */}
             </div>
         </div>
     );
