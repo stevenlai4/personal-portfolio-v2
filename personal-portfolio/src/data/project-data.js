@@ -3,7 +3,7 @@ export const projects = [
         name: 'Better Buys',
         image: 'images/betterbuys.png',
         description:
-            '<b>Goal:</b><p>Create a full-stack .NET e-commerce website</p><b>Learning Outcome:</b><ul><li>Applying HTTP request methods to achieve database CRUD operations</li><li>Utilizing classes, objects, interfaces, model views, models, services, etc. to achieve backend development</li><li>Implementing website securities such as Recaptch V3 and account lockout for consecutive login failed attempts</li></ul>',
+            '<b>Goal:</b><p>Create a full-stack .NET e-commerce website</p><b>Learning Outcome:</b><ul><li>Applying HTTP request methods to achieve database CRUD operations</li><li>Utilizing classes, objects, interfaces, model views, models, services, etc. to achieve backend development</li><li>Implementing website securities such as reCAPTCHA V3 and account lockout for consecutive login failed attempts</li></ul>',
         category: ['.NET'],
         language: ['HTML', 'CSS', 'ASP.NET, MSSQL'],
         git: 'https://github.com/stevenlai4/BetterBuys',
