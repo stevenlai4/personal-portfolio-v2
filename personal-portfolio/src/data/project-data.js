@@ -4,7 +4,7 @@ export const projects = [
         image: 'images/betterbuys.png',
         description:
             '<b>Goal:</b><p>Create a full-stack .NET e-commerce website</p><b>Learning Outcome:</b><ul><li>Applying HTTP request methods to achieve database CRUD operations</li><li>Utilizing classes, objects, interfaces, model views, models, services, etc. to achieve backend development</li><li>Implementing website securities such as reCAPTCHA V3 and account lockout for consecutive login failed attempts</li></ul>',
-        category: ['.NET'],
+        category: ['CSS', '.NET'],
         language: ['HTML', 'CSS', 'ASP.NET, MSSQL'],
         git: 'https://github.com/stevenlai4/BetterBuys',
         url: 'https://betterbuysfurniture.azurewebsites.net/',
