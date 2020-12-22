@@ -8,7 +8,7 @@ export default function Objective() {
                 <b>team-oriented</b>, <b>meticulous</b>, and <b>innovative</b>{' '}
                 Full-Stack Web Developer with a year of experience building
                 various types of websites using <b>HTML</b>, <b>CSS/SASS</b>,{' '}
-                <b>JavaScript</b>, <b>SQL</b>, <b>React</b>, <b>ASP .NET</b>,{' '}
+                <b>JavaScript</b>, <b>SQL</b>, <b>React</b>, <b>ASP.NET</b>,{' '}
                 etc.
             </p>
         </div>
