@@ -1,5 +1,15 @@
 export const projects = [
     {
+        name: 'Better Buys',
+        image: 'images/betterbuys.png',
+        description:
+            '<b>Goal:</b><p>Create a full-stack .NET e-commerce website</p><b>Learning Outcome:</b><ul><li>Applying HTTP request methods to achieve database CRUD operations</li><li>Utilizing classes, objects, interfaces, model views, models, services, etc. to achieve backend development</li><li>Implementing website securities such as Recaptch V3 and account lockout for consecutive login failed attempts</li></ul>',
+        category: ['.NET'],
+        language: ['HTML', 'CSS', 'ASP.NET, MSSQL'],
+        git: 'https://github.com/stevenlai4/BetterBuys',
+        url: 'https://betterbuysfurniture.azurewebsites.net/',
+    },
+    {
         name: 'Movie App',
         image: 'images/movie-app.png',
         description:
@@ -92,16 +102,6 @@ export const projects = [
         url: 'https://design-principles-steven.netlify.app',
     },
     {
-        name: 'Tourism BC',
-        image: 'images/tourism-bc.png',
-        description:
-            '<b>Goal:</b><p>Design an unresponsive BC Tourism website</p><b>Learning Outcome:</b><ul><li>Apply CSS fundamental concepts</li><li>Design multiple pages layout using CSS</li><li>Design a simple contact form</li></ul>',
-        category: ['CSS'],
-        language: ['HTML', 'CSS'],
-        git: 'https://github.com/stevenlai4/tourism-bc',
-        url: 'https://tourism-bc-steven.netlify.app/',
-    },
-    {
         name: 'Flight Registration System',
         image: 'images/flight-registration-system.jpg',
         description:
@@ -109,7 +109,7 @@ export const projects = [
         category: ['Other'],
         language: ['Java', 'MSSQL'],
         git: 'https://github.com/stevenlai4/flight-registration-system',
-        url: '',
+        url: 'https://betterbuysfurniture.azurewebsites.net',
     },
     {
         name: 'Course Registration System',
@@ -129,5 +129,6 @@ export const projectCategory = [
     'Javascript',
     'React',
     'Angular',
+    '.NET',
     'Other',
 ];

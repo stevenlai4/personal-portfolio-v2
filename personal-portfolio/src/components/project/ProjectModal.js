@@ -22,7 +22,7 @@ export default function ProjectModal(props) {
                         i !== props.project.language.length - 1 ? `${l}, ` : l
                     )}
                 </p>
-                <p>{parser(props.project.description)}</p>
+                {parser(props.project.description)}
                 <div className="project-btn-group">
                     <a
                         href={props.project.git}
