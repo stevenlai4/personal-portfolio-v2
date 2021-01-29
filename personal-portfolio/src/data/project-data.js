@@ -109,7 +109,7 @@ export const projects = [
         category: ['Other'],
         language: ['Java', 'MSSQL'],
         git: 'https://github.com/stevenlai4/flight-registration-system',
-        url: 'https://betterbuysfurniture.azurewebsites.net',
+        url: '',
     },
     {
         name: 'Course Registration System',
