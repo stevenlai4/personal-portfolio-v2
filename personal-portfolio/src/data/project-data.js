@@ -1,5 +1,15 @@
 export const projects = [
     {
+        name: 'AFK & Chill',
+        image: 'images/afk-and-chill.png',
+        description:
+            '<b>Goal:</b><p>Create a full-stack gaming dating app.</p><b>Learning Outcome:</b><ul><li>Backend using AWS (Lambda/Layer & API Gateway) to setup REST API endpoints, user authentication using AWS Cognito and saving images using S3 Buckets</li><li>Utilizing Material-UI for overall React components styling</li></ul>',
+        category: ['Express/Node', 'React'],
+        language: ['Express/Node', 'React', 'MongoDB', 'Material-UI', 'AWS'],
+        git: 'https://github.com/stevenlai4/AFKAndChill-frontend',
+        url: 'https://afk-and-chill.netlify.app/',
+    },
+    {
         name: 'Better Buys',
         image: 'images/betterbuys.png',
         description:
@@ -61,17 +71,6 @@ export const projects = [
         url: 'https://lovelypetnews.netlify.app/',
     },
     {
-        name: 'Planet Wine - Angular',
-        image: 'images/planet-wine-angular.png',
-        description:
-            '<b>Goal:</b><p>Create e-commerce product, shopping cart, and product description pages using Angular</p><b>Learning Outcome:</b><ul><li>Angular framework fundamental concepts</li><li>TypeScript syntax and structure</li><li>Angular routing features</li></ul>',
-        category: ['CSS', 'Angular'],
-        language: ['HTML', 'Angular', 'SASS', 'Boostrap'],
-        git:
-            'https://github.com/stevenlai4/planet-wine-Angular/tree/main/planet-wine-angular',
-        url: 'https://planet-wine-angular.netlify.app',
-    },
-    {
         name: 'Bar & Grill',
         image: 'images/bar&grill.png',
         description:
@@ -90,16 +89,6 @@ export const projects = [
         language: ['HTML', 'CSS', 'Javascript'],
         git: 'https://github.com/stevenlai4/sudoku',
         url: 'https://stevensudoku.netlify.app/',
-    },
-    {
-        name: 'Design Principles',
-        image: 'images/design-principles.png',
-        description:
-            '<b>Goal:</b><p>Create a website that explains four design principles</p><b>Learning Outcome:</b><ul><li>Collapsable navigation bar using pure CSS</li><li>Utilize CSS grid feature for section styling</li><li>Employ design principle concepts in the project</li></ul>',
-        category: ['CSS'],
-        language: ['HTML', 'CSS'],
-        git: 'https://github.com/stevenlai4/design-principles',
-        url: 'https://design-principles-steven.netlify.app',
     },
     {
         name: 'Flight Registration System',
@@ -126,9 +115,9 @@ export const projects = [
 export const projectCategory = [
     'All',
     'CSS',
+    'Express/Node',
     'Javascript',
     'React',
-    'Angular',
     '.NET',
     'Other',
 ];

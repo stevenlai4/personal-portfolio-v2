@@ -6,27 +6,29 @@ const htmlItemInfo = [
 ];
 
 // CSS data
-const cssItems = ['CSS3', 'SASS', 'Bootstrap'];
+const cssItems = ['CSS3', 'SASS', 'Bootstrap', 'Material-UI'];
 const cssItemInfo = [
     { percentage: 60, image: 'images/css3.png' },
     { percentage: 60, image: 'images/sass.png' },
     { percentage: 90, image: 'images/bootstrap.png' },
+    { percentage: 30, image: 'images/material-ui.png' },
 ];
 
 // JS data
-const jsItems = ['React', 'Javascript', 'Angular', 'NodeJS'];
+const jsItems = ['React', 'Javascript', 'Express', 'NodeJS'];
 const jsItemInfo = [
     { percentage: 50, image: 'images/react.png' },
     { percentage: 60, image: 'images/javascript.png' },
-    { percentage: 20, image: 'images/angular.png' },
+    { percentage: 60, image: 'images/express.png' },
     { percentage: 30, image: 'images/nodejs.png' },
 ];
 
 // Backend data
-const beItems = ['Java', 'C#'];
+const beItems = ['Java', 'C#', 'AWS'];
 const beItemInfo = [
     { percentage: 80, image: 'images/java.png' },
     { percentage: 30, image: 'images/c-sharp.png' },
+    { percentage: 20, image: 'images/aws.png' },
 ];
 
 // Database data
@@ -34,7 +36,7 @@ const dbItems = ['MySQL', 'MSSQL', 'MongoDB'];
 const dbItemInfo = [
     { percentage: 60, image: 'images/mysql.png' },
     { percentage: 70, image: 'images/mssql.png' },
-    { percentage: 30, image: 'images/mongodb.png' },
+    { percentage: 50, image: 'images/mongodb.png' },
 ];
 
 // Skills data
